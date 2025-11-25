@@ -71,7 +71,7 @@ export function Navbar() {
       <div 
         className={cn(
           "flex items-center",
-          isScrolled && "mx-auto w-fit rounded-full"
+          isScrolled ? "mx-auto w-fit rounded-full" : "justify-between"
         )}
         style={{
           background: isScrolled ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
@@ -110,14 +110,11 @@ export function Navbar() {
 
         {/* Navigation centrale */}
         <nav 
-          className={cn(
-            "c-nav_menu hidden lg:flex items-center rounded-full",
-            !isScrolled && "mx-4"
-          )}
+          className="c-nav_menu hidden lg:flex items-center rounded-full"
           style={{
             padding: isScrolled ? '0' : '0.6rem 0.8rem',
-            marginLeft: isScrolled ? '0.5rem' : 'auto',
-            marginRight: isScrolled ? '0.5rem' : 'auto',
+            marginLeft: '0.5rem',
+            marginRight: '0.5rem',
             background: isScrolled ? 'transparent' : 'rgba(30, 30, 30, 0.95)',
             backdropFilter: isScrolled ? 'none' : 'blur(15px)',
             WebkitBackdropFilter: isScrolled ? 'none' : 'blur(15px)',

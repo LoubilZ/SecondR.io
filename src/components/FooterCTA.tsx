@@ -8,7 +8,7 @@ export default function FooterCTA() {
     { src: "/logo/Anthropic.png", alt: "Anthropic" },
     { src: "/logo/Revolut.png", alt: "Revolut" },
     { src: "/logo/xA2.png", alt: "xAI" },
-    { src: "/logo/Stripe3.png", alt: "Stripe" },
+    { src: "/logo/stripe3.png", alt: "Stripe" },
   ];
 
   return (
