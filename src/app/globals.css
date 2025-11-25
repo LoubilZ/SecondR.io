@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'Degular Display';
+    src: url('/FONTS/DEGULAR-DISPLAY/fonnts.com-DegularDisplayDemo-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Degular Display';
+    src: url('/FONTS/DEGULAR-DISPLAY/fonnts.com-DegularDisplayDemo-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@theme {
+  --font-degular: 'Degular Display', sans-serif;
+  --color-primary: #0F172A;
+  --color-primary-foreground: #FFFFFF;
+  
+  --color-secondary: #D4AF37;
+  --color-secondary-foreground: #FFFFFF;
+  
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #64748B;
+  
+  --color-accent: #F8FAFC;
+  --color-accent-foreground: #0F172A;
+  
+  --color-background: #000000;
+  --color-foreground: #FFFFFF;
+
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/10;
+  }
+  
+  .container-width {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .font-degular {
+    font-family: 'Degular Display', sans-serif;
+  }
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+/* Wave Animation for Portfolio Section */
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Conteneur principal */
+.wave-container {
+  position: relative;
+  width: 182px;
+  height: 182px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+/* Cercle central - au-dessus des vagues */
+.center-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 20;
+}
+
+.center-circle img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+/* Vagues animées - derrière le cercle */
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  background: none;
+  animation: round 6.2s linear infinite;
+  will-change: transform, box-shadow;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Vague 1 */
+.wave-0 {
+  border-radius: 44% 56% 39% 61% / 37% 35% 65% 63%;
+  animation-delay: 0s;
+}
+
+/* Vague 2 */
+.wave-1 {
+  border-radius: 37% 63% 71% 29% / 44% 39% 61% 56%;
+  animation-delay: 0.52s;
+}
+
+/* Vague 3 */
+.wave-2 {
+  border-radius: 68% 32% 46% 54% / 29% 51% 49% 71%;
+  animation-delay: 1.04s;
+}
+
+/* Vague 4 */
+.wave-3 {
+  border-radius: 62% 38% 51% 49% / 42% 42% 58% 58%;
+  animation-delay: 1.56s;
+}
+
+/* Vague 5 */
+.wave-4 {
+  border-radius: 67% 33% 57% 43% / 45% 61% 39% 55%;
+  animation-delay: 2.08s;
+}
+
+/* Vague 6 */
+.wave-5 {
+  border-radius: 67% 33% 66% 34% / 36% 70% 30% 64%;
+  animation-delay: 2.6s;
+}
+
+/* Vague 7 */
+.wave-6 {
+  border-radius: 67% 33% 66% 34% / 36% 70% 30% 64%;
+  animation-delay: 3.12s;
+}

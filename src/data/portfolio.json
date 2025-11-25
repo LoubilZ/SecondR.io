@@ -1,0 +1,33 @@
+{
+  "section": {
+    "title": "Unlock the future.",
+    "subtitle": "Your exclusive gateway to private market liquidity."
+  },
+  "items": [
+    {
+      "logoImage": "/logo/Anthropic.png",
+      "alt": "Anthropic",
+      "brandColor": "#D97757",
+      "colors": ["#D97757", "#E08A6A", "#C96A4A", "#E9A080", "#B85D3D", "#D97757", "#E08A6A"]
+    },
+    {
+      "logoImage": "/logo/Revolut.png",
+      "alt": "Revolut",
+      "brandColor": "#FFFFFF",
+      "colors": ["#FFFFFF", "#F0F0F0", "#E8E8E8", "#FAFAFA", "#D0D0D0", "#F5F5F5", "#FFFFFF"]
+    },
+    {
+      "logoImage": "/logo/xA2.png",
+      "alt": "xAI",
+      "brandColor": "#E61134",
+      "colors": ["#E61134", "#F02244", "#CC0E2D", "#FF3355", "#B30C26", "#E61134", "#F02244"]
+    },
+    {
+      "logoImage": "/logo/Stripe3.png",
+      "alt": "Stripe",
+      "brandColor": "#635CFF",
+      "colors": ["#635CFF", "#7A74FF", "#524AE8", "#918CFF", "#4A44D0", "#635CFF", "#7A74FF"]
+    }
+  ]
+}
+
