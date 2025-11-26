@@ -458,13 +458,15 @@
   }
 
   .mainContainer {
-    min-height: auto;
+    min-height: 800px;
+    padding-bottom: 200px;
   }
 
   .stoneWrapper {
     max-width: 320px;
     width: 80%;
-    top: 40%;
+    top: 200px;
+    position: absolute;
   }
   
   .stoneImage {
@@ -588,6 +590,12 @@
 
   .stoneWrapper {
     max-width: 280px;
+    top: 180px;
+  }
+
+  .mainContainer {
+    min-height: 750px;
+    padding-bottom: 180px;
   }
 
   .dockBar {
