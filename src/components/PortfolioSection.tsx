@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import portfolioData from "@/data/portfolio.json";
+import styles from "./PortfolioSection.module.css";
 
 interface BrokerItem {
   logoImage: string;
@@ -41,13 +42,13 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
 
   return (
     <div className="grid justify-center overflow-x-hidden overflow-y-auto bg-black py-10">
-      <h1 className="font-degular" style={{color:'#fff',textAlign:'center',fontSize:'4.8rem',marginBottom:'16px',fontWeight:'600',letterSpacing:'-0.012em',lineHeight:'0.9'}}>
+      <h1 className={`font-degular ${styles.sectionTitle}`}>
         {title}
       </h1>
-      <h2 style={{color:'rgba(255,255,255,0.6)',textAlign:'center',fontSize:'1.25rem',marginBottom:'42px',fontWeight:'400',maxWidth:'600px',margin:'0 auto 42px'}}>
+      <h2 className={styles.sectionSubtitle}>
         {subtitle}
       </h2>
-      <div className="relative w-[90vw] max-w-[1412px] h-[444px] rounded-2xl overflow-hidden">
+      <div className={styles.carouselContainer}>
         {/* Carousel Items */}
         {items.map((item, index) => {
           const isActive = index === activeIndex;
@@ -76,8 +77,8 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
               <div className="items-center grid justify-items-center absolute left-0 top-0 right-0 bottom-0 z-[1000]">
                 {/* Animated Blob SVG Background */}
                 <svg 
-                  width={isMobile ? "200" : "320"}
-                  height={isMobile ? "200" : "320"}
+                  width={isMobile ? "120" : "320"}
+                  height={isMobile ? "120" : "320"}
                   viewBox="0 0 320 320" 
                   style={{
                     position: "absolute",
@@ -85,7 +86,7 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     zIndex: 0,
-                    opacity: isMobile ? 0.4 : 0.6
+                    opacity: isMobile ? 0.3 : 0.6
                   }}
                 >
                   <defs>
@@ -118,38 +119,13 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
                 </svg>
 
                 {/* Wave Container - same size as circle */}
-                <div style={{ 
-                  position: 'relative', 
-                  width: '182px', 
-                  height: '182px', 
-                  zIndex: 10,
-                  display: 'grid',
-                  placeItems: 'center'
-                }}>
+                <div className={styles.waveContainer}>
                   {/* Center Circle - BEHIND the waves */}
-                  <div 
-                    style={{ 
-                      position: 'absolute',
-                      width: '182px',
-                      height: '182px',
-                      background: '#000',
-                      borderRadius: '50%',
-                      zIndex: 1,
-                      display: 'grid',
-                      placeItems: 'center'
-                    }} 
-                  >
+                  <div className={styles.centerCircle}>
                     {/* Inner colored circle with logo */}
                     <div
-                      style={{
-                        width: '64px',
-                        height: '64px',
-                        borderRadius: '50%',
-                        background: item.brandColor,
-                        display: 'grid',
-                        placeItems: 'center',
-                        zIndex: 100
-                      }}
+                      className={styles.logoCircle}
+                      style={{ background: item.brandColor }}
                     >
                       <Image
                         alt={item.alt}
@@ -167,13 +143,13 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
                   {/* Animated Waves - ON TOP of the circle */}
                   {item.colors.map((color, colorIndex) => {
                     const boxShadowSpecs = isMobile ? [
-                      `0px 2px 8px 4px ${color}`,
-                      `0px 8px 24px 4px ${color}`,
-                      `0px 3px 10px 2px ${color}`,
-                      `0px 2px 8px 1px ${color}`,
-                      `1px 5px 10px 3px ${color}`,
-                      `1px 3px 8px 2px ${color}`,
-                      `1px 3px 12px 1px ${color}`
+                      `0px 0px 2px 1px ${color}`,
+                      `0px 2px 6px 1px ${color}`,
+                      `0px 1px 3px 0px ${color}`,
+                      `0px 0px 2px 0px ${color}`,
+                      `0px 1px 2px 1px ${color}`,
+                      `0px 1px 2px 0px ${color}`,
+                      `0px 1px 3px 0px ${color}`
                     ] : [
                       `0px 5px 18px 10px ${color}`,
                       `0px 18px 60px 10px ${color}`,
@@ -205,9 +181,12 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
 
               {/* Radial Gradient Overlay */}
               <div 
-                className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 z-[2] opacity-[0.95]"
+                className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 z-[2]"
                 style={{
-                  backgroundImage: "radial-gradient(30% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50.8%, rgb(0, 0, 0) 100%)"
+                  backgroundImage: isMobile 
+                    ? "radial-gradient(45% 45%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 60%, rgb(0, 0, 0) 100%)"
+                    : "radial-gradient(45% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 65%, rgb(0, 0, 0) 100%)",
+                  opacity: isMobile ? 0.85 : 0.9
                 }}
               />
             </div>

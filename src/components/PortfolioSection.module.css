@@ -66,4 +66,113 @@
   /* Specific styles for second broker dots if any */
 }
 
+/* Wave container */
+.waveContainer {
+  position: relative;
+  width: 182px;
+  height: 182px;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+}
+
+/* Center circle */
+.centerCircle {
+  position: absolute;
+  width: 182px;
+  height: 182px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+/* Inner logo circle */
+.logoCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+
+.logoCircle img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Section title */
+.sectionTitle {
+  color: #fff;
+  text-align: center;
+  font-size: 4.8rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 0.9;
+}
+
+/* Section subtitle */
+.sectionSubtitle {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto 42px;
+}
+
+/* Carousel container */
+.carouselContainer {
+  position: relative;
+  width: 90vw;
+  max-width: 1412px;
+  height: 444px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Mobile styles - drastically reduce circle sizes to show more background */
+@media (max-width: 600px) {
+  .sectionTitle {
+    font-size: 2.88rem;
+    margin-bottom: 8px;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+    margin: 0 auto 24px;
+  }
+
+  .carouselContainer {
+    width: 100vw;
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .waveContainer {
+    width: 140px;
+    height: 140px;
+  }
+
+  .centerCircle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .logoCircle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .logoCircle img {
+    width: 32px;
+    height: 32px;
+  }
+}
 
