@@ -41,7 +41,7 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
   }, [items.length]);
 
   return (
-    <div className="grid justify-center overflow-x-hidden overflow-y-auto bg-black py-10">
+    <div className={styles.mainWrapper}>
       <h1 className={`font-degular ${styles.sectionTitle}`}>
         {title}
       </h1>
@@ -65,7 +65,7 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
               <div className="relative w-full h-full">
                 <Image
                   alt="Background"
-                  src="/bon.jpg"
+                  src={isMobile ? "/image/mobile-banner.jpg" : "/bon.jpg"}
                   fill
                   className="block object-cover overflow-clip align-middle"
                   priority={index === 0}

@@ -104,6 +104,16 @@
   object-fit: contain;
 }
 
+/* Main wrapper */
+.mainWrapper {
+  display: grid;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #000;
+  padding: 2.5rem 0;
+}
+
 /* Section title */
 .sectionTitle {
   color: #fff;
@@ -138,6 +148,10 @@
 
 /* Mobile styles - drastically reduce circle sizes to show more background */
 @media (max-width: 600px) {
+  .mainWrapper {
+    padding: 0;
+  }
+
   .sectionTitle {
     font-size: 2.88rem;
     margin-bottom: 8px;

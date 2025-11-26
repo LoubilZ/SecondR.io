@@ -141,7 +141,7 @@ export default function ServicesSection() {
       const endY = descRect.top - containerRect.top - 8;
       
       // Path: down from icon, horizontal to center, then down to text
-      const midY1 = startY + 30;
+      const midY1 = startY + 50;
       const path = `M ${startX} ${startY} V ${midY1} H ${centerX} V ${endY}`;
       setLinePath(path);
     } else {
