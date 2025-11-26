@@ -84,7 +84,7 @@ const getIcon = (iconId: string): React.ReactNode => {
 };
 
 export default function ServicesSection() {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [linePath, setLinePath] = useState("");
   const [isMobile, setIsMobile] = useState(false);
