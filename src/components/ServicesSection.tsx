@@ -20,56 +20,56 @@ interface IconProps {
 // Icon Components - Séparés pour une meilleure réutilisabilité
 const ServiceIcons: Record<string, React.FC<IconProps>> = {
   home: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M11.0311 20.25H18.75C19.5784 20.25 20.25 19.5784 20.25 18.75V9.6943C20.25 9.25388 20.0564 8.83571 19.7207 8.55071L12.9689 2.81986C12.4096 2.34663 11.5904 2.34663 11.0311 2.81986L4.28109 8.53139C3.94426 8.8164 3.75 9.23525 3.75 9.67647V18.75C3.75 19.5784 4.42157 20.25 5.25 20.25H12V16.75"/>
-    </svg>
-  ),
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M11.0311 20.25H18.75C19.5784 20.25 20.25 19.5784 20.25 18.75V9.6943C20.25 9.25388 20.0564 8.83571 19.7207 8.55071L12.9689 2.81986C12.4096 2.34663 11.5904 2.34663 11.0311 2.81986L4.28109 8.53139C3.94426 8.8164 3.75 9.23525 3.75 9.67647V18.75C3.75 19.5784 4.42157 20.25 5.25 20.25H12V16.75"/>
+      </svg>
+    ),
   analysis: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21.2499 11.9998C21.2499 17.1084 17.1085 21.2498 11.9999 21.2498C6.89124 21.2498 2.74988 17.1084 2.74988 11.9998C2.74988 6.89112 6.89124 2.74976 11.9999 2.74976C17.1085 2.74976 21.2499 6.89112 21.2499 11.9998Z" stroke="#E6E6E6" strokeWidth="1.49993" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M10.2516 10.2515L15.2499 8.74976L13.7482 13.7481L8.74988 15.2498L10.2516 10.2515Z" stroke="#E6E6E6" strokeWidth="1.49993" strokeLinejoin="round"/>
-    </svg>
-  ),
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.2499 11.9998C21.2499 17.1084 17.1085 21.2498 11.9999 21.2498C6.89124 21.2498 2.74988 17.1084 2.74988 11.9998C2.74988 6.89112 6.89124 2.74976 11.9999 2.74976C17.1085 2.74976 21.2499 6.89112 21.2499 11.9998Z" stroke="#E6E6E6" strokeWidth="1.49993" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M10.2516 10.2515L15.2499 8.74976L13.7482 13.7481L8.74988 15.2498L10.2516 10.2515Z" stroke="#E6E6E6" strokeWidth="1.49993" strokeLinejoin="round"/>
+      </svg>
+    ),
   calendar: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M7.74999 1.75V3.75M16.25 1.75V3.75M4.78845 3.75H19.2115C20.04 3.75 20.7115 4.42157 20.7115 5.25V19.0577C20.7115 19.8861 20.04 20.5577 19.2115 20.5577H4.78845C3.96002 20.5577 3.28845 19.8861 3.28845 19.0577V5.25C3.28845 4.42157 3.96003 3.75 4.78845 3.75Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <text textAnchor="middle" fill="#E6E6E6" style={{fontFamily: 'inherit', fontSize: '12px', fontWeight: 'bold'}}><tspan x="12" y="15.75">25</tspan></text>
-    </svg>
-  ),
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.74999 1.75V3.75M16.25 1.75V3.75M4.78845 3.75H19.2115C20.04 3.75 20.7115 4.42157 20.7115 5.25V19.0577C20.7115 19.8861 20.04 20.5577 19.2115 20.5577H4.78845C3.96002 20.5577 3.28845 19.8861 3.28845 19.0577V5.25C3.28845 4.42157 3.96003 3.75 4.78845 3.75Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <text textAnchor="middle" fill="#E6E6E6" style={{fontFamily: 'inherit', fontSize: '12px', fontWeight: 'bold'}}><tspan x="12" y="15.75">25</tspan></text>
+      </svg>
+    ),
   bookmark: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15.25 7.75H8.75M19.25 20.25V5.25C19.25 4.42157 18.5784 3.75 17.75 3.75H6.25C5.42157 3.75 4.75 4.42157 4.75 5.25V20.25L11.3479 17.0648C11.7599 16.8659 12.2401 16.8659 12.6521 17.0648L19.25 20.25Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  ),
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.25 7.75H8.75M19.25 20.25V5.25C19.25 4.42157 18.5784 3.75 17.75 3.75H6.25C5.42157 3.75 4.75 4.42157 4.75 5.25V20.25L11.3479 17.0648C11.7599 16.8659 12.2401 16.8659 12.6521 17.0648L19.25 20.25Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
   chart: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g>
-        <mask id="path-1-inside-1" fill="white">
-          <path fillRule="evenodd" clipRule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V6.9393L14.5304 13.4089C14.2375 13.7018 13.7626 13.7018 13.4697 13.4089L10.591 10.5303C9.71235 9.65157 8.28773 9.65157 7.40905 10.5303L3 14.9393V6ZM3 17.0606V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V9.06062L15.591 14.4696C14.7123 15.3483 13.2877 15.3483 12.409 14.4696L9.53037 11.5909C9.23747 11.298 8.7626 11.298 8.46971 11.5909L3 17.0606Z"/>
-        </mask>
-        <path fillRule="evenodd" clipRule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V6.9393L14.5304 13.4089C14.2375 13.7018 13.7626 13.7018 13.4697 13.4089L10.591 10.5303C9.71235 9.65157 8.28773 9.65157 7.40905 10.5303L3 14.9393V6ZM3 17.0606V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V9.06062L15.591 14.4696C14.7123 15.3483 13.2877 15.3483 12.409 14.4696L9.53037 11.5909C9.23747 11.298 8.7626 11.298 8.46971 11.5909L3 17.0606Z" fill="#E1E0DC" fillOpacity="0.8"/>
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <mask id="path-1-inside-1" fill="white">
+            <path fillRule="evenodd" clipRule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V6.9393L14.5304 13.4089C14.2375 13.7018 13.7626 13.7018 13.4697 13.4089L10.591 10.5303C9.71235 9.65157 8.28773 9.65157 7.40905 10.5303L3 14.9393V6ZM3 17.0606V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V9.06062L15.591 14.4696C14.7123 15.3483 13.2877 15.3483 12.409 14.4696L9.53037 11.5909C9.23747 11.298 8.7626 11.298 8.46971 11.5909L3 17.0606Z"/>
+          </mask>
+          <path fillRule="evenodd" clipRule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V6.9393L14.5304 13.4089C14.2375 13.7018 13.7626 13.7018 13.4697 13.4089L10.591 10.5303C9.71235 9.65157 8.28773 9.65157 7.40905 10.5303L3 14.9393V6ZM3 17.0606V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V9.06062L15.591 14.4696C14.7123 15.3483 13.2877 15.3483 12.409 14.4696L9.53037 11.5909C9.23747 11.298 8.7626 11.298 8.46971 11.5909L3 17.0606Z" fill="#E1E0DC" fillOpacity="0.8"/>
         <path d="M21 6.9393L21.1768 7.11608L21.25 7.04285V6.9393H21ZM14.5304 13.4089L14.7071 13.5857H14.7071L14.5304 13.4089ZM13.4697 13.4089L13.6465 13.2322L13.4697 13.4089ZM10.591 10.5303L10.4143 10.707L10.591 10.5303ZM7.40905 10.5303L7.23227 10.3535H7.23227L7.40905 10.5303ZM3 14.9393H2.75V15.5429L3.17678 15.1161L3 14.9393ZM3 17.0606L2.82322 16.8838L2.75 16.9571V17.0606H3ZM21 9.06062H21.25V8.45707L20.8232 8.88384L21 9.06062ZM15.591 14.4696L15.4143 14.2928L15.591 14.4696ZM12.409 14.4696L12.2323 14.6464L12.409 14.4696ZM9.53037 11.5909L9.70715 11.4141H9.70715L9.53037 11.5909ZM8.46971 11.5909L8.29293 11.4141H8.29293L8.46971 11.5909Z" fill="url(#paint0_linear_chart)" fillOpacity="0.8" mask="url(#path-1-inside-1)"/>
-      </g>
-      <defs>
+        </g>
+        <defs>
         <linearGradient id="paint0_linear_chart" x1="8.5" y1="7.5" x2="20.6938" y2="15.1776" gradientUnits="userSpaceOnUse">
-          <stop stopColor="white"/>
-          <stop offset="1" stopColor="white" stopOpacity="0"/>
-        </linearGradient>
-      </defs>
-    </svg>
-  ),
+            <stop stopColor="white"/>
+            <stop offset="1" stopColor="white" stopOpacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    ),
   telescope: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.13175 10.9205L2.93434 12.3441C2.17753 12.6811 1.83717 13.5677 2.17412 14.3245L2.58086 15.2381C2.91781 15.9949 3.80448 16.3353 4.56128 15.9983L7.75869 14.5747M11.6604 7.36293L7.54943 9.19324C6.54036 9.64251 6.08655 10.8247 6.53582 11.8338L7.34929 13.6609C7.79856 14.67 8.98078 15.1238 9.98985 14.6745L14.1008 12.8442M18.5619 3.19545L13.0806 5.63587C11.8193 6.19746 11.252 7.67523 11.8136 8.93658L13.0338 11.6772C13.5954 12.9386 15.0732 13.5058 16.3345 12.9442L21.8158 10.5038C22.068 10.3915 22.1815 10.0959 22.0692 9.84367L19.222 3.44886C19.1097 3.19659 18.8142 3.08313 18.5619 3.19545Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M7.25 21.25L10.5 14.5L13.75 21.25" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  ),
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.13175 10.9205L2.93434 12.3441C2.17753 12.6811 1.83717 13.5677 2.17412 14.3245L2.58086 15.2381C2.91781 15.9949 3.80448 16.3353 4.56128 15.9983L7.75869 14.5747M11.6604 7.36293L7.54943 9.19324C6.54036 9.64251 6.08655 10.8247 6.53582 11.8338L7.34929 13.6609C7.79856 14.67 8.98078 15.1238 9.98985 14.6745L14.1008 12.8442M18.5619 3.19545L13.0806 5.63587C11.8193 6.19746 11.252 7.67523 11.8136 8.93658L13.0338 11.6772C13.5954 12.9386 15.0732 13.5058 16.3345 12.9442L21.8158 10.5038C22.068 10.3915 22.1815 10.0959 22.0692 9.84367L19.222 3.44886C19.1097 3.19659 18.8142 3.08313 18.5619 3.19545Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M7.25 21.25L10.5 14.5L13.75 21.25" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
   settings: () => (
-    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10.6667 2.7698C11.4917 2.29345 12.5083 2.29345 13.3333 2.7698L19.3269 6.2302C20.152 6.70655 20.6603 7.58689 20.6603 8.5396V15.4604C20.6603 16.4131 20.152 17.2934 19.3269 17.7698L13.3333 21.2302C12.5083 21.7066 11.4917 21.7066 10.6667 21.2302L4.67308 17.7698C3.84801 17.2934 3.33975 16.4131 3.33975 15.4604V8.5396C3.33975 7.58689 3.84801 6.70655 4.67308 6.2302L10.6667 2.7698Z" stroke="#E6E6E6" strokeWidth="1.50667"/>
-      <circle cx="12" cy="12.0001" r="3.33333" stroke="#E6E6E6" strokeWidth="1.50667"/>
-    </svg>
-  ),
+      <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6667 2.7698C11.4917 2.29345 12.5083 2.29345 13.3333 2.7698L19.3269 6.2302C20.152 6.70655 20.6603 7.58689 20.6603 8.5396V15.4604C20.6603 16.4131 20.152 17.2934 19.3269 17.7698L13.3333 21.2302C12.5083 21.7066 11.4917 21.7066 10.6667 21.2302L4.67308 17.7698C3.84801 17.2934 3.33975 16.4131 3.33975 15.4604V8.5396C3.33975 7.58689 3.84801 6.70655 4.67308 6.2302L10.6667 2.7698Z" stroke="#E6E6E6" strokeWidth="1.50667"/>
+        <circle cx="12" cy="12.0001" r="3.33333" stroke="#E6E6E6" strokeWidth="1.50667"/>
+      </svg>
+    ),
   search: () => (
     <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M17 17L21 21M19.25 11C19.25 15.5563 15.5563 19.25 11 19.25C6.44365 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.44365 2.75 11 2.75C15.5563 2.75 19.25 6.44365 19.25 11Z" stroke="#E6E6E6" strokeWidth="1.5" strokeLinecap="round"/>
@@ -277,8 +277,8 @@ export default function ServicesSection() {
           </div>
 
           {/* Connector Line SVG */}
-          <svg 
-            className={styles.connectorLine}
+            <svg 
+              className={styles.connectorLine} 
             aria-hidden="true"
             style={{
               position: 'absolute',
@@ -289,16 +289,16 @@ export default function ServicesSection() {
               pointerEvents: 'none',
               overflow: 'visible'
             }}
-          >
-            <path
+            >
+              <path
               d={linePath}
-              stroke="#828282"
-              strokeWidth="1"
+                stroke="#828282"
+                strokeWidth="1"
               strokeDasharray="2, 2"
-              fill="none"
+                fill="none"
               style={{ transition: 'd 0.15s ease' }}
-            />
-          </svg>
+              />
+            </svg>
 
           {/* Description Area */}
           <div className={styles.lineDescriptionArea} role="tabpanel">
@@ -310,7 +310,7 @@ export default function ServicesSection() {
                   className={`${styles.descriptionBlock} ${index === activeIndex ? styles.descriptionVisible : ''}`}
                   aria-hidden={index !== activeIndex}
                 >
-                  <h3 className={styles.descriptionTitle}>{service.title}</h3>
+                  <h3 className={styles.descriptionTitle} dangerouslySetInnerHTML={{ __html: service.title }} />
                   <p className={styles.descriptionText}>{service.description}</p>
                 </div>
               ))}

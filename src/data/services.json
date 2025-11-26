@@ -1,48 +1,48 @@
 {
-  "sectionTitle": "Full-spectrum solutions for private capital markets.",
+  "sectionTitle": "Full-spectrum solutions for venture private capital markets.",
   "backgroundImage": "/image/fey-stone_4x.57d81287.jpg",
   "services": [
     {
       "id": "home",
       "iconId": "home",
-      "title": "Secondary Transactions",
-      "description": "We facilitate LP stake acquisitions and dispositions, providing liquidity solutions for institutional investors."
+      "title": "Private Markets Concierge",
+      "description": "Off-market access to the next generation of winners. Our Silicon Valley relationships: VCs, founders, growth funds create exclusive deal flow for buyers and sellers alike. Market pricing, institutional process, discreet execution."
     },
     {
       "id": "analysis",
       "iconId": "analysis",
-      "title": "Portfolio Analysis",
-      "description": "Track economic indicators, market trends, and insider trades in one unified view. Everything that moves the world—made simple."
+      "title": "Venture Secondaries Advisory",
+      "description": "Turning illiquid venture positions into successful exits. We execute all transaction types (tender offers, direct sales, and hybrid rounds) delivering tailored liquidity solutions. Full advisory from secondary valuation through closing, including deal structuring, marketing materials and roadshows."
     },
     {
       "id": "calendar",
       "iconId": "calendar",
-      "title": "Earnings",
-      "description": "View upcoming earnings across day, week, or month. Join calls live and read instant summaries as events unfold."
+      "title": "GP-Led Advisory",
+      "description": "Institutional-grade solutions for venture and growth GPs optimizing DPI metrics. We structure continuation vehicles, strip sales, and fund recapitalizations."
     },
     {
       "id": "bookmark",
       "iconId": "bookmark",
-      "title": "Watchlist and Holdings",
-      "description": "Track all your portfolios in one place. Create lists, drag to reorder, and monitor what matters to you."
+      "title": "LP-Led Advisory",
+      "description": "Institutional-grade exit execution for LPs in VC positions. Whether rebalancing, managing overallocation, or liquidating mature positions, we deliver superior outcomes through competitive processes."
     },
     {
       "id": "chart",
       "iconId": "chart",
-      "title": "Graph comparison",
-      "description": "Overlay charts across multiple metrics like price, valuation, or growth. See trends side by side to spot what stands out."
+      "title": "Valuation & Analytics",
+      "description": "Independent valuations using the latest methodologies fitted to business specifics. We also build waterfall models for multiple scenarios: previewing secondary deal proceeds, calculating next-round dilution, stress-testing downround impacts, and tracking portfolio NAV changes."
     },
     {
       "id": "telescope",
       "iconId": "telescope",
-      "title": "Stock Finder",
-      "description": "Find stocks by typing what you want. No complex filters or jargon, just clear, intelligent results in seconds."
+      "title": "Liquidity Partners",
+      "description": "Direct connections to the buyers that matter: top-tier secondary funds, sovereign wealth, and family officess. We don't mass-market, we orchestrate selective introductions to pre-qualified counterparties actively deploying capital."
     },
     {
       "id": "settings",
       "iconId": "settings",
-      "title": "Settings",
-      "description": "Manage your subscription, track referrals, or cancel anytime. Everything about your account, in one place."
+      "title": "The <i>secondr</i> Platform (Coming Soon)",
+      "description": "Proprietary technology to accelerate every aspect of secondary transactions. From AI-powered buyer matching to automated document processing, we're building the infrastructure for tomorrow's private markets."
     }
   ]
 }
