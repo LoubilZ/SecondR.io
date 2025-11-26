@@ -138,7 +138,9 @@ export default function ServicesSection() {
     if (isMobile) {
       // Mobile: vertical line down to text, then horizontal to center, then down to title
       const centerX = descRect.left + descRect.width / 2 - containerRect.left;
-      const endY = descRect.top - containerRect.top - 8;
+      // Calculate middle of title for proper alignment
+      const titleHeight = titleElement ? titleElement.getBoundingClientRect().height : 0;
+      const endY = descRect.top + (titleHeight / 2) - containerRect.top;
       
       // Path: down from icon, horizontal to center, then down to text
       const midY1 = startY + 50;

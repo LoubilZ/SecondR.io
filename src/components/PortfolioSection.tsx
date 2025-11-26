@@ -184,9 +184,9 @@ function BrokerCarousel({ items, title, subtitle }: BrokerCarouselProps) {
                 className="pointer-events-none absolute left-0 top-0 right-0 bottom-0 z-[2]"
                 style={{
                   backgroundImage: isMobile 
-                    ? "radial-gradient(45% 45%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 60%, rgb(0, 0, 0) 100%)"
+                    ? "radial-gradient(40% 40%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgb(0, 0, 0) 100%)"
                     : "radial-gradient(45% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 65%, rgb(0, 0, 0) 100%)",
-                  opacity: isMobile ? 0.85 : 0.9
+                  opacity: isMobile ? 0.90 : 0.9
                 }}
               />
             </div>
